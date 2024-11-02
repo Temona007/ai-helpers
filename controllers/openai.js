@@ -6,7 +6,7 @@ const fs    = require('fs');
 
 const OpenAI = require('openai');
 const openai = new OpenAI({
-  apiKey: process.env['KEY'], 
+  apiKey: process.env['OPENAI_API_KEY'], 
 });
 
 exports.summarize = async (req, res) => {
